@@ -30,7 +30,9 @@ using namespace std;
         while(inFile >> firstName >> lastName >> rate >> hours)
         {
         
-            
+            gross = grossPay(hours, rate);
+            tax = taxPct(gross);
+            final = finalPay(gross, tax);
             
            outFile << setw(6) << firstName << setw(8) << lastName << setw(10);
            outFile << setprecision(2) << fixed << rate << setw(9)
