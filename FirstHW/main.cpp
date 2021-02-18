@@ -21,7 +21,7 @@ using namespace std;
     double hours;
     double gross;
     double tax;
-    double final;
+    double pay;
 
     
     outFile << " First   " << " Last " << "  Pay Rate" << "   Hours" << "     Gross" << "    Tax Pct " << "    Final" << endl;
@@ -32,11 +32,11 @@ using namespace std;
         
             gross = grossPay(hours, rate);
             tax = taxPct(gross);
-            final = finalPay(gross, tax);
+            pay = finalPay(gross, tax);
             
            outFile << setw(6) << firstName << setw(8) << lastName << setw(10);
            outFile << setprecision(2) << fixed << rate << setw(9)
-            << setprecision(2) << fixed << hours << setw(10)<< setprecision(2) << fixed << gross << setw(11) << setprecision(2) << fixed << tax <<  setw(11) << setprecision(2) << fixed << final << endl;
+            << setprecision(2) << fixed << hours << setw(10)<< setprecision(2) << fixed << gross << setw(11) << setprecision(2) << fixed << tax <<  setw(11) << setprecision(2) << fixed << pay << endl;
 
         }
 
