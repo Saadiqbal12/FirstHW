@@ -1,0 +1,5 @@
+ First    Last   Pay Rate   Hours     Gross    Tax Pct     Final
+  Rose    Diaz     25.00    40.00   1000.00       0.20     800.00
+ Mateo   Lopez     15.00    30.00    450.00       0.15     382.50
+  Jane   Smith     20.00    30.00    600.00       0.20     480.00
+  John   Brown     10.00    15.00    150.00       0.10     135.00
